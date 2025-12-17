@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands We Deal In - MobileShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .brand-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .brand-icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .brand-list {
+            margin-top: 15px;
+            font-size: 14px;
+            color: var(--text-grey);
+            list-style: none;
+            /* Already global but reinforcing */
+        }
+
+        .brand-list li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MobileShop.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="brands.html" class="active" style="color: var(--primary-color);">Brands</a></li>
+                <li><a href="price-check.html">Check Price</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <h1 class="text-center" style="font-size: 42px; margin-bottom: 20px; color: var(--primary-color);">
+                Authorized Reseller</h1>
+            <p class="text-center" style="margin-bottom: 60px; color: var(--text-grey);">We bring you the latest devices
+                from top global manufacturers.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                <!-- Apple -->
+                <div class="brand-card">
+                    <i class="fab fa-apple brand-icon"></i>
+                    <h2>Apple</h2>
+                    <ul class="brand-list">
+                        <li>iPhone 15 Series</li>
+                        <li>iPhone 14 & SE</li>
+                        <li>iPads & MacBooks</li>
+                    </ul>
+                </div>
+
+                <!-- Samsung -->
+                <div class="brand-card" style="border-top: 5px solid #1428a0;">
+                    <h2 style="font-size: 32px; margin-bottom: 10px; color: #1428a0;">SAMSUNG</h2>
+                    <ul class="brand-list">
+                        <li>Galaxy S Series</li>
+                        <li>Galaxy A Series</li>
+                        <li>Galaxy Z Fold/Flip</li>
+                    </ul>
+                </div>
+
+                <!-- Xiaomi -->
+                <div class="brand-card" style="border-top: 5px solid #ff6700;">
+                    <h2 style="font-size: 32px; margin-bottom: 10px; color: #ff6700;">xiaomi</h2>
+                    <ul class="brand-list">
+                        <li>Redmi Note Series</li>
+                        <li>Xiaomi Flagships</li>
+                        <li>POCO Series</li>
+                    </ul>
+                </div>
+
+                <!-- Realme -->
+                <div class="brand-card" style="border-top: 5px solid #ffcc00;">
+                    <h2
+                        style="font-size: 32px; margin-bottom: 10px; color: #e6b800; font-weight: 800; font-style: italic;">
+                        realme</h2>
+                    <ul class="brand-list">
+                        <li>GT Series</li>
+                        <li>Narzo Series</li>
+                        <li>Number Series</li>
+                    </ul>
+                </div>
+
+                <!-- OnePlus -->
+                <div class="brand-card" style="border-top: 5px solid #f50514;">
+                    <h2 style="font-size: 32px; margin-bottom: 10px; color: #f50514;">1+ OnePlus</h2>
+                    <ul class="brand-list">
+                        <li>OnePlus 11/12</li>
+                        <li>Nord Series</li>
+                        <li>Accessories</li>
+                    </ul>
+                </div>
+
+                <!-- Accessories -->
+                <div class="brand-card">
+                    <i class="fas fa-headphones brand-icon" style="color: var(--secondary-color);"></i>
+                    <h2>Accessories</h2>
+                    <ul class="brand-list">
+                        <li>BoAt, JBL, Sony</li>
+                        <li>Chargers & Cables</li>
+                        <li>Protective Cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 60px; padding: 40px; background: #e8f0fe; border-radius: 20px;">
+                <h3 style="margin-bottom: 10px;">Don't see what you're looking for?</h3>
+                <p style="margin-bottom: 20px;">We can source specific models upon request.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p style="color: #bbb; line-height: 1.6;">Your trusted local partner for mobile technology. We
+                        believe technology should be accessible to everyone.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="price-check.html">Check Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="buying-guide.html">Buying Guide</a></li>
+                        <li><a href="original-check.html">Original Check</a></li>
+                        <li><a href="support.html">After-Sales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1-555-0123-456</li>
+                        <li><i class="fas fa-envelope"></i> sales@mobileshop.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Main Street, City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MobileShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

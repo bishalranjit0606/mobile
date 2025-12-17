@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Price & Availability - MobileShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MobileShop.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="price-check.html" class="active" style="color: var(--primary-color);">Check Price</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="margin-top: 80px; min-height: 80vh;">
+        <div class="container" style="max-width: 600px;">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h1 style="font-size: 36px; margin-bottom: 10px; color: var(--primary-color);">Real-Time Price Checker
+                </h1>
+                <p style="color: var(--text-grey);">Check the latest retail price and stock status instantly.</p>
+            </div>
+
+            <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: var(--card-shadow);">
+                <div style="margin-bottom: 20px;">
+                    <label for="price-search" style="display: block; margin-bottom: 10px; font-weight: 500;">Search
+                        Model or Brand</label>
+                    <div style="display: flex; gap: 10px;">
+                        <input type="text" id="price-search" placeholder="e.g. iPhone 14, Galaxy S23..."
+                            style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; outline: none;">
+                        <button id="search-btn" class="btn btn-primary" style="padding: 12px 20px;"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div id="search-result">
+                    <!-- Results will appear here via JS -->
+                    <div style="text-align: center; color: #999; padding: 20px;">
+                        <i class="fas fa-search" style="font-size: 40px; margin-bottom: 10px; opacity: 0.2;"></i>
+                        <p>Enter a device name to filter results.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <p style="font-size: 14px; color: var(--text-grey);">*Prices are subject to change. For wholesale rates,
+                    please contact us directly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p style="color: #bbb; line-height: 1.6;">Your trusted local partner for mobile technology. We
+                        believe technology should be accessible to everyone.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="price-check.html">Check Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="buying-guide.html">Buying Guide</a></li>
+                        <li><a href="original-check.html">Original Check</a></li>
+                        <li><a href="support.html">After-Sales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1-555-0123-456</li>
+                        <li><i class="fas fa-envelope"></i> sales@mobileshop.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Main Street, City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MobileShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

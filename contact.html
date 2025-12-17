@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MobileShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 86, 210, 0.1);
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">MobileShop.</a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="brands.html">Brands</a></li>
+                <li><a href="price-check.html">Check Price</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="contact.html" class="active" style="color: var(--primary-color);">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="margin-top: 80px;">
+        <div class="container">
+            <h1 class="text-center" style="font-size: 42px; margin-bottom: 20px; color: var(--primary-color);">Visit Our
+                Store</h1>
+            <p class="text-center" style="margin-bottom: 60px; color: var(--text-grey);">We are open 6 days a week to
+                serve you.</p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px;">
+                <div>
+                    <h2 style="margin-bottom: 30px;">Get in Touch</h2>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Address</h4>
+                            <p style="color: var(--text-grey);">Shop No. 12, Tech Plaza, Main Market Street, Downtown,
+                                City 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Phone / WhatsApp</h4>
+                            <p style="color: var(--text-grey);">+1-555-0123-456</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email</h4>
+                            <p style="color: var(--text-grey);">sales@mobileshop.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Business Hours</h4>
+                            <p style="color: var(--text-grey);">Mon - Sat: 10:00 AM - 9:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Google Map Placeholder -->
+                    <div
+                        style="background: #eee; width: 100%; height: 100%; min-height: 400px; border-radius: 20px; display: flex; align-items: center; justify-content: center; color: #999; font-size: 20px;">
+                        <i class="fas fa-map" style="margin-right: 10px;"></i> Google Map Embed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index) -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p style="color: #bbb; line-height: 1.6;">Your trusted local partner for mobile technology. We
+                        believe technology should be accessible to everyone.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="brands.html">Brands</a></li>
+                        <li><a href="price-check.html">Check Price</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="buying-guide.html">Buying Guide</a></li>
+                        <li><a href="original-check.html">Original Check</a></li>
+                        <li><a href="support.html">After-Sales</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1-555-0123-456</li>
+                        <li><i class="fas fa-envelope"></i> sales@mobileshop.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Main Street, City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 MobileShop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
